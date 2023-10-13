@@ -12,7 +12,45 @@
 		3CEE29E52AD9164000ECF66A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEE29E32AD9164000ECF66A /* Main.storyboard */; };
 		3CEE29E72AD9164100ECF66A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CEE29E62AD9164100ECF66A /* Assets.xcassets */; };
 		3CEE29EA2AD9164100ECF66A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEE29E82AD9164100ECF66A /* LaunchScreen.storyboard */; };
+		3CEE29F82AD9170F00ECF66A /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEE29F72AD9170F00ECF66A /* NetworkExtension.framework */; };
+		3CEE29FB2AD9170F00ECF66A /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE29FA2AD9170F00ECF66A /* PacketTunnelProvider.swift */; };
+		3CEE2A002AD9170F00ECF66A /* tvospackettunnel.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3CEE29F52AD9170F00ECF66A /* tvospackettunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3CEE2A0A2AD91D1300ECF66A /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEE29F72AD9170F00ECF66A /* NetworkExtension.framework */; };
+		3CEE2A0D2AD91D1300ECF66A /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE2A0C2AD91D1300ECF66A /* PacketTunnelProvider.swift */; };
+		3CEE2A122AD91D1300ECF66A /* tvospackettunnelfaulty.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3CEE2A092AD91D1300ECF66A /* tvospackettunnelfaulty.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CEE29FE2AD9170F00ECF66A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CEE29D42AD9164000ECF66A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CEE29F42AD9170F00ECF66A;
+			remoteInfo = tvospackettunnel;
+		};
+		3CEE2A102AD91D1300ECF66A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CEE29D42AD9164000ECF66A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CEE2A082AD91D1300ECF66A;
+			remoteInfo = tvospackettunnelfaulty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3CEE2A042AD9170F00ECF66A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3CEE2A002AD9170F00ECF66A /* tvospackettunnel.appex in Embed Foundation Extensions */,
+				3CEE2A122AD91D1300ECF66A /* tvospackettunnelfaulty.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3CEE29DC2AD9164000ECF66A /* sampletvosapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sampletvosapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +59,16 @@
 		3CEE29E42AD9164000ECF66A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CEE29E62AD9164100ECF66A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CEE29E92AD9164100ECF66A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CEE29F02AD9166400ECF66A /* sampletvosapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sampletvosapp.entitlements; sourceTree = "<group>"; };
+		3CEE29F52AD9170F00ECF66A /* tvospackettunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = tvospackettunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEE29F72AD9170F00ECF66A /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		3CEE29FA2AD9170F00ECF66A /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		3CEE29FC2AD9170F00ECF66A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CEE29FD2AD9170F00ECF66A /* tvospackettunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tvospackettunnel.entitlements; sourceTree = "<group>"; };
+		3CEE2A092AD91D1300ECF66A /* tvospackettunnelfaulty.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = tvospackettunnelfaulty.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEE2A0C2AD91D1300ECF66A /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		3CEE2A0E2AD91D1300ECF66A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CEE2A0F2AD91D1300ECF66A /* tvospackettunnelfaulty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tvospackettunnelfaulty.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +79,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CEE29F22AD9170F00ECF66A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEE29F82AD9170F00ECF66A /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEE2A062AD91D1300ECF66A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEE2A0A2AD91D1300ECF66A /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				3CEE29DE2AD9164000ECF66A /* sampletvosapp */,
+				3CEE29F92AD9170F00ECF66A /* tvospackettunnel */,
+				3CEE2A0B2AD91D1300ECF66A /* tvospackettunnelfaulty */,
+				3CEE29F62AD9170F00ECF66A /* Frameworks */,
 				3CEE29DD2AD9164000ECF66A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				3CEE29DC2AD9164000ECF66A /* sampletvosapp.app */,
+				3CEE29F52AD9170F00ECF66A /* tvospackettunnel.appex */,
+				3CEE2A092AD91D1300ECF66A /* tvospackettunnelfaulty.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +122,7 @@
 		3CEE29DE2AD9164000ECF66A /* sampletvosapp */ = {
 			isa = PBXGroup;
 			children = (
+				3CEE29F02AD9166400ECF66A /* sampletvosapp.entitlements */,
 				3CEE29DF2AD9164000ECF66A /* AppDelegate.swift */,
 				3CEE29E12AD9164000ECF66A /* ViewController.swift */,
 				3CEE29E32AD9164000ECF66A /* Main.storyboard */,
@@ -60,6 +130,34 @@
 				3CEE29E82AD9164100ECF66A /* LaunchScreen.storyboard */,
 			);
 			path = sampletvosapp;
+			sourceTree = "<group>";
+		};
+		3CEE29F62AD9170F00ECF66A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CEE29F72AD9170F00ECF66A /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CEE29F92AD9170F00ECF66A /* tvospackettunnel */ = {
+			isa = PBXGroup;
+			children = (
+				3CEE29FA2AD9170F00ECF66A /* PacketTunnelProvider.swift */,
+				3CEE29FC2AD9170F00ECF66A /* Info.plist */,
+				3CEE29FD2AD9170F00ECF66A /* tvospackettunnel.entitlements */,
+			);
+			path = tvospackettunnel;
+			sourceTree = "<group>";
+		};
+		3CEE2A0B2AD91D1300ECF66A /* tvospackettunnelfaulty */ = {
+			isa = PBXGroup;
+			children = (
+				3CEE2A0C2AD91D1300ECF66A /* PacketTunnelProvider.swift */,
+				3CEE2A0E2AD91D1300ECF66A /* Info.plist */,
+				3CEE2A0F2AD91D1300ECF66A /* tvospackettunnelfaulty.entitlements */,
+			);
+			path = tvospackettunnelfaulty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,15 +170,52 @@
 				3CEE29D82AD9164000ECF66A /* Sources */,
 				3CEE29D92AD9164000ECF66A /* Frameworks */,
 				3CEE29DA2AD9164000ECF66A /* Resources */,
+				3CEE2A042AD9170F00ECF66A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3CEE29FF2AD9170F00ECF66A /* PBXTargetDependency */,
+				3CEE2A112AD91D1300ECF66A /* PBXTargetDependency */,
 			);
 			name = sampletvosapp;
 			productName = sampletvosapp;
 			productReference = 3CEE29DC2AD9164000ECF66A /* sampletvosapp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3CEE29F42AD9170F00ECF66A /* tvospackettunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEE2A012AD9170F00ECF66A /* Build configuration list for PBXNativeTarget "tvospackettunnel" */;
+			buildPhases = (
+				3CEE29F12AD9170F00ECF66A /* Sources */,
+				3CEE29F22AD9170F00ECF66A /* Frameworks */,
+				3CEE29F32AD9170F00ECF66A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tvospackettunnel;
+			productName = tvospackettunnel;
+			productReference = 3CEE29F52AD9170F00ECF66A /* tvospackettunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3CEE2A082AD91D1300ECF66A /* tvospackettunnelfaulty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEE2A152AD91D1300ECF66A /* Build configuration list for PBXNativeTarget "tvospackettunnelfaulty" */;
+			buildPhases = (
+				3CEE2A052AD91D1300ECF66A /* Sources */,
+				3CEE2A062AD91D1300ECF66A /* Frameworks */,
+				3CEE2A072AD91D1300ECF66A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tvospackettunnelfaulty;
+			productName = tvospackettunnelfaulty;
+			productReference = 3CEE2A092AD91D1300ECF66A /* tvospackettunnelfaulty.appex */;
+			productType = "com.apple.product-type.tv-app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -93,6 +228,12 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					3CEE29DB2AD9164000ECF66A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					3CEE29F42AD9170F00ECF66A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					3CEE2A082AD91D1300ECF66A = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -111,6 +252,8 @@
 			projectRoot = "";
 			targets = (
 				3CEE29DB2AD9164000ECF66A /* sampletvosapp */,
+				3CEE29F42AD9170F00ECF66A /* tvospackettunnel */,
+				3CEE2A082AD91D1300ECF66A /* tvospackettunnelfaulty */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +269,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CEE29F32AD9170F00ECF66A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEE2A072AD91D1300ECF66A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,7 +295,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CEE29F12AD9170F00ECF66A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEE29FB2AD9170F00ECF66A /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEE2A052AD91D1300ECF66A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEE2A0D2AD91D1300ECF66A /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CEE29FF2AD9170F00ECF66A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CEE29F42AD9170F00ECF66A /* tvospackettunnel */;
+			targetProxy = 3CEE29FE2AD9170F00ECF66A /* PBXContainerItemProxy */;
+		};
+		3CEE2A112AD91D1300ECF66A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CEE2A082AD91D1300ECF66A /* tvospackettunnelfaulty */;
+			targetProxy = 3CEE2A102AD91D1300ECF66A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3CEE29E32AD9164000ECF66A /* Main.storyboard */ = {
@@ -282,8 +468,10 @@
 		3CEE29EE2AD9164100ECF66A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sampletvosapp/sampletvosapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4H849Z7V2K;
@@ -307,8 +495,10 @@
 		3CEE29EF2AD9164100ECF66A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sampletvosapp/sampletvosapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4H849Z7V2K;
@@ -323,6 +513,110 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.atom.sampletvosapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		3CEE2A022AD9170F00ECF66A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = tvospackettunnel/tvospackettunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H849Z7V2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tvospackettunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = tvospackettunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atom.sampletvosapp.tvospackettunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		3CEE2A032AD9170F00ECF66A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = tvospackettunnel/tvospackettunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H849Z7V2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tvospackettunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = tvospackettunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atom.sampletvosapp.tvospackettunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		3CEE2A132AD91D1300ECF66A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = tvospackettunnelfaulty/tvospackettunnelfaulty.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H849Z7V2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tvospackettunnelfaulty/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = tvospackettunnelfaulty;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atom.sampletvosapp.tvospackettunnelfaulty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		3CEE2A142AD91D1300ECF66A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = tvospackettunnelfaulty/tvospackettunnelfaulty.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4H849Z7V2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tvospackettunnelfaulty/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = tvospackettunnelfaulty;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atom.sampletvosapp.tvospackettunnelfaulty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -346,6 +640,24 @@
 			buildConfigurations = (
 				3CEE29EE2AD9164100ECF66A /* Debug */,
 				3CEE29EF2AD9164100ECF66A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CEE2A012AD9170F00ECF66A /* Build configuration list for PBXNativeTarget "tvospackettunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEE2A022AD9170F00ECF66A /* Debug */,
+				3CEE2A032AD9170F00ECF66A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CEE2A152AD91D1300ECF66A /* Build configuration list for PBXNativeTarget "tvospackettunnelfaulty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEE2A132AD91D1300ECF66A /* Debug */,
+				3CEE2A142AD91D1300ECF66A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
